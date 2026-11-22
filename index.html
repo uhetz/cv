@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Vitae | uhetz</title>
+  <meta name="description" content="Curriculum Vitae of uhetz - Software Engineer & Systems Developer">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Floating Action Bar for Web Visitors -->
+  <aside class="floating-controls no-print" aria-label="Controls">
+    <button id="theme-toggle" class="control-btn" title="Toggle theme (Light/Dark)" aria-label="Toggle theme">
+      <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+      <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <span class="btn-text">Theme</span>
+    </button>
+    <button id="print-btn" class="control-btn" onclick="window.print()" title="Print or save as PDF" aria-label="Print or save as PDF">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+      <span class="btn-text">Save PDF</span>
+    </button>
+  </aside>
+
+  <main class="cv-container">
+    <!-- Header Section -->
+    <header class="cv-header">
+      <div class="header-main">
+        <h1 class="name">Herm Hetzel</h1>
+        <p class="title">Software Engineer &amp; Systems Developer</p>
+        <p class="tagline">Passionate about low-level systems, Linux infrastructure, performance engineering, and robust software architecture.</p>
+      </div>
+
+      <nav class="contact-links" aria-label="Contact Information">
+        <a href="mailto:hermhetzel@gmail.com" class="contact-item" title="Email">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span>hermhetzel@gmail.com</span>
+        </a>
+        <a href="https://github.com/uhetz" target="_blank" rel="noopener noreferrer" class="contact-item" title="GitHub">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          <span>github.com/uhetz</span>
+        </a>
+        <a href="https://uhetz.github.io" target="_blank" rel="noopener noreferrer" class="contact-item" title="Blog / Website">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <span>uhetz.github.io</span>
+        </a>
+        <span class="contact-item">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Germany / Remote</span>
+        </span>
+      </nav>
+    </header>
+
+    <!-- Summary -->
+    <section class="cv-section" id="summary">
+      <h2 class="section-title">Summary</h2>
+      <p class="summary-text">
+        Systems-oriented software engineer with a strong foundation in modern C++, Linux internals, and tooling. 
+        Experienced in building reliable, high-performance software, automated workflows, and embedded/low-level systems. 
+        Advocate of clean code, automated testing, and reproducible development environments.
+      </p>
+    </section>
+
+    <!-- Technical Skills -->
+    <section class="cv-section" id="skills">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <span class="category-name">Languages</span>
+          <div class="skill-tags">
+            <span class="tag">C++ (Modern C++17/20)</span>
+            <span class="tag">C</span>
+            <span class="tag">Python</span>
+            <span class="tag">Rust</span>
+            <span class="tag">Bash / Shell</span>
+            <span class="tag">TypeScript / JavaScript</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <span class="category-name">Systems &amp; Platforms</span>
+          <div class="skill-tags">
+            <span class="tag">Linux / POSIX</span>
+            <span class="tag">Arch Linux</span>
+            <span class="tag">Embedded Systems</span>
+            <span class="tag">Docker / Containers</span>
+            <span class="tag">Git &amp; GitHub Actions</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <span class="category-name">Tools &amp; Workflows</span>
+          <div class="skill-tags">
+            <span class="tag">Neovim</span>
+            <span class="tag">CMake / Make</span>
+            <span class="tag">GDB / LLDB / Valgrind</span>
+            <span class="tag">CI/CD Automation</span>
+            <span class="tag">Linux Kernel &amp; Driver Dev</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="cv-section" id="experience">
+      <h2 class="section-title">Professional Experience</h2>
+
+      <article class="timeline-item">
+        <div class="timeline-header">
+          <div>
+            <h3 class="role">Software Engineer</h3>
+            <span class="organization">Company / Organization</span>
+          </div>
+          <span class="time-period">2022 &ndash; Present</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Architected and implemented high-performance C++ components, improving system throughput and reducing latency.</li>
+          <li>Engineered automated CI/CD pipelines with GitHub Actions for cross-platform builds, unit testing, and static analysis.</li>
+          <li>Troubleshot and resolved critical memory leaks, concurrency bugs, and system-level performance bottlenecks.</li>
+          <li>Collaborated closely with cross-functional engineering teams to deliver modular and maintainable software releases.</li>
+        </ul>
+      </article>
+
+      <article class="timeline-item">
+        <div class="timeline-header">
+          <div>
+            <h3 class="role">Junior Software Developer</h3>
+            <span class="organization">Previous Company / Tech Project</span>
+          </div>
+          <span class="time-period">2020 &ndash; 2022</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Developed backend services and systems utilities using modern C++ and Python.</li>
+          <li>Created automated testing suites ensuring high code quality and test coverage.</li>
+          <li>Maintained developer tooling and documentation to streamline team onboarding and productivity.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Projects -->
+    <section class="cv-section" id="projects">
+      <h2 class="section-title">Projects &amp; Open Source</h2>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-header">
+            <h3 class="project-title">
+              <a href="https://github.com/uhetz/embedded-communication" target="_blank" rel="noopener noreferrer">Embedded Communication Protocol</a>
+            </h3>
+            <span class="project-badge">Open Source</span>
+          </div>
+          <p class="project-desc">Lightweight, reliable communication protocol designed for resource-constrained embedded systems and microcontrollers.</p>
+          <div class="project-tags">
+            <span class="mini-tag">C++</span>
+            <span class="mini-tag">Embedded</span>
+            <span class="mini-tag">UART/SPI</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <h3 class="project-title">
+              <a href="https://github.com/uhetz/dotfiles" target="_blank" rel="noopener noreferrer">Reproducible Linux Dotfiles</a>
+            </h3>
+            <span class="project-badge">Personal</span>
+          </div>
+          <p class="project-desc">Custom declarative configuration for Arch Linux, Neovim, tiling window managers, and optimized developer tooling.</p>
+          <div class="project-tags">
+            <span class="mini-tag">Linux</span>
+            <span class="mini-tag">Neovim</span>
+            <span class="mini-tag">Lua / Shell</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="cv-section" id="education">
+      <h2 class="section-title">Education</h2>
+
+      <article class="timeline-item">
+        <div class="timeline-header">
+          <div>
+            <h3 class="role">B.Sc. / M.Sc. in Computer Science (or Engineering)</h3>
+            <span class="organization">University / Institution</span>
+          </div>
+          <span class="time-period">2017 &ndash; 2021</span>
+        </div>
+        <p class="education-details">Focus on Operating Systems, Distributed Systems, Software Engineering, and Computer Architecture.</p>
+      </article>
+    </section>
+
+    <!-- Footer -->
+    <footer class="cv-footer no-print">
+      <p>Hosted with GitHub Pages &bull; Source code on <a href="https://github.com/uhetz/cv" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+    </footer>
+  </main>
+
+  <script>
+    // Theme toggle logic (System preference + LocalStorage)
+    const toggleBtn = document.getElementById('theme-toggle');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    
+    function setTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('theme', theme);
+    }
+
+    const savedTheme = localStorage.getItem('theme') || (prefersDark.matches ? 'dark' : 'light');
+    setTheme(savedTheme);
+
+    toggleBtn.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') || 'light';
+      setTheme(current === 'dark' ? 'light' : 'dark');
+    });
+
+    prefersDark.addEventListener('change', (e) => {
+      if (!localStorage.getItem('theme')) {
+        setTheme(e.matches ? 'dark' : 'light');
+      }
+    });
+  </script>
+</body>
+</html>
