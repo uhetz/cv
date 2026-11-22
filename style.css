@@ -256,6 +256,13 @@ a:hover {
   border: 1px solid var(--border-color);
 }
 
+.tag-primary {
+  background-color: var(--accent-light);
+  color: var(--accent);
+  border-color: var(--accent);
+  font-weight: 600;
+}
+
 /* ==========================================================================
    Timeline / Experience Items
    ========================================================================== */
@@ -607,6 +614,13 @@ a:hover {
     background-color: #f1f5f9 !important;
     color: #0f172a !important;
     border: 1px solid #cbd5e1 !important;
+  }
+
+  .tag-primary {
+    background-color: #eff6ff !important;
+    color: #1e3a8a !important;
+    border: 1px solid #1e3a8a !important;
+    font-weight: 600 !important;
   }
 
   .projects-grid {

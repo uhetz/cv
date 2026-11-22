@@ -32,7 +32,9 @@ The CV is strictly structured to print cleanly onto **3 pages** (A4 / Letter) wh
 ## Content & Tone Guidelines
 - **Direct, technical, non-buzzy**: Avoid corporate buzzwords or inflated claims (e.g., use `"bugs"` instead of `"defects"`; do not claim OS/platform/container architecture ownership when tools like Docker or TinyOS are simply used for development).
 - **Core focus**: Highlight delivering reliable embedded C++ software fast on Linux and leveraging AI-assisted workflows (such as Claude skills) to shorten time-to-market (TTM) for software components.
-- **Active skills only**: Keep the main `#skills` section focused on active core tools (`C++`, `Python`, `Bash`, `C`, `Linux`, `POSIX`, `Docker`, `TinyOS`, `CMake`, `Neovim`, `Git`, `CI/CD`, `GDB`).
+- **Active skills only**: Keep the main `#skills` section split into two visual tiers:
+  - **Primary Focus** (`.tag-primary`): `C++17`, `Linux`, `AI-Assisted Workflows (Claude Skills)`.
+  - **Supporting Tools & Environment** (`.tag`): `Python`, `Bash / Shell`, `CMake`, `Docker`, `TinyOS`, `Git`, `Neovim`.
 
 ## Workflow Rules
 - **Do not push automatically**: Always apply and review edits locally first. Only commit and `git push` when the user explicitly confirms to publish.
