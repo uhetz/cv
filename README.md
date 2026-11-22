@@ -1,5 +1,6 @@
-# CV / Resume
+# CV / Resume — Hermann Hetzel
 
-Personal CV & Resume for [uhetz](https://github.com/uhetz).
+Personal CV & Lebenslauf for [Hermann Hetzel (@uhetz)](https://github.com/uhetz).
 
-Hosted on GitHub Pages: [https://uhetz.github.io/cv/](https://uhetz.github.io/cv/)
+- **English (EN)**: [https://uhetz.github.io/cv/](https://uhetz.github.io/cv/)
+- **Deutsch (DE)**: [https://uhetz.github.io/cv/de.html](https://uhetz.github.io/cv/de.html)

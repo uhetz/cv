@@ -110,6 +110,7 @@ a:hover {
 .control-btn:hover {
   border-color: var(--accent);
   color: var(--accent);
+  text-decoration: none;
   transform: translateY(-1px);
 }
 
@@ -212,6 +213,10 @@ a:hover {
   line-height: 1.7;
 }
 
+.summary-text + .summary-text {
+  margin-top: 0.5rem;
+}
+
 /* ==========================================================================
    Skills Grid
    ========================================================================== */
@@ -273,9 +278,18 @@ a:hover {
 }
 
 .role {
+  display: inline;
   font-size: 1.05rem;
   font-weight: 600;
   color: var(--text-primary);
+}
+
+.role a {
+  color: var(--text-primary);
+}
+
+.role a:hover {
+  color: var(--accent);
 }
 
 .organization {
@@ -309,6 +323,24 @@ a:hover {
   line-height: 1.55;
 }
 
+.bullet-list li strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.timeline-tech {
+  margin-top: 0.65rem;
+  font-size: 0.8rem;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--text-secondary);
+}
+
+.timeline-tech .tech-label {
+  font-weight: 600;
+  color: var(--accent);
+  margin-right: 0.35rem;
+}
+
 .bullet-list li::before {
   content: "•";
   position: absolute;
@@ -320,6 +352,24 @@ a:hover {
 .education-details {
   font-size: 0.925rem;
   color: var(--text-secondary);
+}
+
+.award-badge {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+  padding: 0.12rem 0.5rem;
+  font-size: 0.725rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  border-radius: 9999px;
+  background-color: var(--accent-light);
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+.hackathon-item {
+  margin-bottom: 1.15rem;
 }
 
 /* ==========================================================================
@@ -399,6 +449,39 @@ a:hover {
 }
 
 /* ==========================================================================
+   Languages Grid
+   ========================================================================== */
+.languages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.75rem;
+}
+
+.language-item {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  background-color: var(--bg-surface);
+}
+
+.language-hobby {
+  grid-column: 1 / -1;
+}
+
+.lang-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+
+.lang-level {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+/* ==========================================================================
    Footer
    ========================================================================== */
 .cv-footer {
@@ -438,6 +521,10 @@ a:hover {
     align-items: flex-start;
   }
 
+  .role {
+    display: block;
+  }
+
   .organization::before {
     content: "";
   }
@@ -447,8 +534,22 @@ a:hover {
    Print / PDF Styles (Optimized for standard A4/Letter resume export)
    ========================================================================== */
 @media print {
+  :root,
+  [data-theme="dark"] {
+    --bg-primary: #ffffff;
+    --bg-surface: #ffffff;
+    --text-primary: #0f172a;
+    --text-secondary: #334155;
+    --text-muted: #475569;
+    --border-color: #cbd5e1;
+    --accent: #1e3a8a;
+    --accent-light: #eff6ff;
+    --tag-bg: #f1f5f9;
+    --tag-text: #0f172a;
+  }
+
   @page {
-    margin: 1.5cm;
+    margin: 1.2cm 1.4cm;
     size: auto;
   }
 
@@ -456,7 +557,8 @@ a:hover {
     background: #ffffff !important;
     color: #000000 !important;
     padding: 0 !important;
-    font-size: 10.5pt;
+    font-size: 9.75pt;
+    line-height: 1.45;
   }
 
   .cv-container {
@@ -475,15 +577,30 @@ a:hover {
     text-decoration: none !important;
   }
 
+  .print-page-break {
+    break-before: page;
+    page-break-before: always;
+  }
+
+  .cv-section {
+    margin-bottom: 1.15rem !important;
+  }
+
   .section-title {
     color: #1e3a8a !important;
-    font-size: 11pt !important;
+    font-size: 10.5pt !important;
     border-bottom: 1px solid #cbd5e1;
-    margin-bottom: 0.6rem !important;
+    margin-bottom: 0.5rem !important;
+    break-after: avoid;
+    page-break-after: avoid;
   }
 
   .section-title::after {
     display: none;
+  }
+
+  .timeline-header {
+    margin-bottom: 0.15rem !important;
   }
 
   .tag, .mini-tag {
@@ -492,13 +609,30 @@ a:hover {
     border: 1px solid #cbd5e1 !important;
   }
 
-  .project-card {
+  .projects-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 0.65rem !important;
+  }
+
+  .project-card,
+  .language-item {
     border: 1px solid #cbd5e1 !important;
+    break-inside: avoid;
     page-break-inside: avoid;
+    padding: 0.6rem 0.8rem !important;
+  }
+
+  .project-desc {
+    margin-bottom: 0.45rem !important;
   }
 
   .timeline-item {
+    break-inside: avoid;
     page-break-inside: avoid;
-    margin-bottom: 1rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  .hackathon-item {
+    margin-bottom: 0.5rem !important;
   }
 }

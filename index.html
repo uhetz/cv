@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Curriculum Vitae | uhetz</title>
-  <meta name="description" content="Curriculum Vitae of uhetz - Software Engineer & Systems Developer">
+  <title>Hermann Hetzel | CV</title>
+  <meta name="description" content="Curriculum Vitae of Hermann Hetzel - Embedded Software Engineer">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +13,9 @@
 <body>
   <!-- Floating Action Bar for Web Visitors -->
   <aside class="floating-controls no-print" aria-label="Controls">
+    <a href="de.html" class="control-btn" title="Auf Deutsch wechseln (DE)" aria-label="Auf Deutsch wechseln">
+      <span class="btn-text">DE</span>
+    </a>
     <button id="theme-toggle" class="control-btn" title="Toggle theme (Light/Dark)" aria-label="Toggle theme">
       <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
       <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
@@ -29,8 +32,8 @@
     <header class="cv-header">
       <div class="header-main">
         <h1 class="name">Hermann Hetzel</h1>
-        <p class="title">Software Engineer &amp; Systems Developer</p>
-        <p class="tagline">Passionate about low-level systems, Linux infrastructure, performance engineering, and robust software architecture.</p>
+        <p class="title">Embedded Software Engineer</p>
+        <p class="tagline">C++, Python, and Linux tooling for embedded appliance software.</p>
       </div>
 
       <nav class="contact-links" aria-label="Contact Information">
@@ -61,9 +64,11 @@
     <section class="cv-section" id="summary">
       <h2 class="section-title">Summary</h2>
       <p class="summary-text">
-        Systems-oriented software engineer with a strong foundation in modern C++, Linux internals, and tooling. 
-        Experienced in building reliable, high-performance software, automated workflows, and embedded/low-level systems. 
-        Advocate of clean code, automated testing, and reproducible development environments.
+        Embedded Software Engineer with a background in Business Informatics, currently developing appliance software in C++ on Linux.
+        Previously worked in backend data platform engineering and analytics automation.
+      </p>
+      <p class="summary-text">
+        Focused on delivering reliable software fast and leveraging AI-assisted workflows to shorten time-to-market for software components.
       </p>
     </section>
 
@@ -72,93 +77,214 @@
       <h2 class="section-title">Technical Skills</h2>
       <div class="skills-grid">
         <div class="skill-category">
-          <span class="category-name">Languages</span>
+          <span class="category-name">Core Languages</span>
           <div class="skill-tags">
-            <span class="tag">C++ (Modern C++17/20)</span>
-            <span class="tag">C</span>
+            <span class="tag">C++ (Modern C++)</span>
             <span class="tag">Python</span>
-            <span class="tag">Rust</span>
             <span class="tag">Bash / Shell</span>
-            <span class="tag">TypeScript / JavaScript</span>
+            <span class="tag">C</span>
           </div>
         </div>
 
         <div class="skill-category">
-          <span class="category-name">Systems &amp; Platforms</span>
+          <span class="category-name">Systems &amp; Environment</span>
           <div class="skill-tags">
-            <span class="tag">Linux / POSIX</span>
-            <span class="tag">Arch Linux</span>
-            <span class="tag">Embedded Systems</span>
+            <span class="tag">Linux</span>
+            <span class="tag">POSIX</span>
             <span class="tag">Docker / Containers</span>
-            <span class="tag">Git &amp; GitHub Actions</span>
+            <span class="tag">TinyOS</span>
           </div>
         </div>
 
         <div class="skill-category">
-          <span class="category-name">Tools &amp; Workflows</span>
+          <span class="category-name">Tooling &amp; Workflows</span>
           <div class="skill-tags">
+            <span class="tag">CMake</span>
             <span class="tag">Neovim</span>
-            <span class="tag">CMake / Make</span>
-            <span class="tag">GDB / LLDB / Valgrind</span>
+            <span class="tag">Git &amp; GitHub Actions</span>
             <span class="tag">CI/CD Automation</span>
-            <span class="tag">Linux Kernel &amp; Driver Dev</span>
+            <span class="tag">GDB / Debugging</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Experience -->
-    <section class="cv-section" id="experience">
+    <!-- Languages (Overview Page 1) -->
+    <section class="cv-section" id="languages">
+      <h2 class="section-title">Languages</h2>
+      <div class="languages-grid">
+        <div class="language-item">
+          <span class="lang-name">Russian</span>
+          <span class="lang-level">Native</span>
+        </div>
+        <div class="language-item">
+          <span class="lang-name">German</span>
+          <span class="lang-level">Fluent</span>
+        </div>
+        <div class="language-item">
+          <span class="lang-name">English</span>
+          <span class="lang-level">Fluent</span>
+        </div>
+        <div class="language-item language-hobby">
+          <span class="lang-name">Italian &amp; Japanese</span>
+          <span class="lang-level">Hobby Learning (1,300+ day streak &mdash; studied Italian, now exploring Japanese)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience (Page 2 in Print) -->
+    <section class="cv-section print-page-break" id="experience">
       <h2 class="section-title">Professional Experience</h2>
 
+      <!-- BSH Home Appliances Group -->
       <article class="timeline-item">
         <div class="timeline-header">
           <div>
-            <h3 class="role">Software Engineer</h3>
-            <span class="organization">BSH Home Appliances Group &bull; Traunreut, Bavaria</span>
+            <h3 class="role">Embedded Software Engineer</h3>
+            <span class="organization">BSH Home Appliances Group &bull; Traunreut, Germany</span>
           </div>
-          <span class="time-period">Present</span>
+          <span class="time-period">Aug 2023 &ndash; Present</span>
         </div>
         <ul class="bullet-list">
-          <li>Development of robust, high-performance software and embedded systems for home appliance platforms.</li>
-          <li>System architecture, CI/CD pipeline automation, and modern Linux/C++ developer tooling.</li>
-          <li>Cross-functional engineering collaboration delivering mission-critical appliances and services.</li>
+          <li><strong>Ovens Domain (Aug 2024 &ndash; Present):</strong> Developing and maintaining embedded appliance software components in C++ on TinyOS, alongside Python and Bash automation for target-hardware testing on Linux.</li>
+          <li><strong>Fully Automatic Coffee Machines (Aug 2023 &ndash; Aug 2024):</strong> Developed embedded application features in C++ and tracked down bugs reproducible only on target hardware.</li>
         </ul>
+        <div class="timeline-tech">
+          <span class="tech-label">Tech:</span> C++, Python, CMake, Docker, Bash, Linux, TinyOS
+        </div>
+      </article>
+
+      <!-- e:fs TechHub GmbH -->
+      <article class="timeline-item">
+        <div class="timeline-header">
+          <div>
+            <h3 class="role">Software Developer (Dual Student / Working Student)</h3>
+            <span class="organization">e:fs TechHub GmbH &bull; Gaimersheim / Ingolstadt, Germany</span>
+          </div>
+          <span class="time-period">Oct 2021 &ndash; Jul 2023</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Built backend microservices using Java and Spring Boot, integrating OpenSearch for distributed querying and indexing.</li>
+          <li>Containerized and managed microservices deployment with Docker and Kubernetes; integrated front-end utilities and components using TypeScript and JavaScript.</li>
+        </ul>
+        <div class="timeline-tech">
+          <span class="tech-label">Tech:</span> Java, Spring Boot, OpenSearch, Kubernetes, Docker, TypeScript, JavaScript, Apache
+        </div>
+      </article>
+
+      <!-- Klinikum rechts der Isar -->
+      <article class="timeline-item">
+        <div class="timeline-header">
+          <div>
+            <h3 class="role">Data Analyst / Dual Student (Controlling Department)</h3>
+            <span class="organization">Klinikum rechts der Isar &bull; Munich, Germany</span>
+          </div>
+          <span class="time-period">Oct 2019 &ndash; Jun 2022</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Assisted the hospital controlling team in processing and analyzing financial, clinical, and operational datasets.</li>
+          <li>Modernized legacy Excel/VBA reporting workflows by implementing automated Python and Pandas data processing pipelines, substantially reducing manual workload and processing time.</li>
+          <li>Created interactive data dashboards and visual metrics using D3.js and Python.</li>
+        </ul>
+        <div class="timeline-tech">
+          <span class="tech-label">Tech:</span> Python, Pandas, VBA, D3.js, Excel Automation
+        </div>
+      </article>
+    </section>
+
+    <!-- Hackathons & Competitions (Page 3 in Print) -->
+    <section class="cv-section print-page-break" id="hackathons">
+      <h2 class="section-title">Hackathons &amp; Competitions</h2>
+
+      <article class="timeline-item hackathon-item">
+        <div class="timeline-header">
+          <div>
+            <h3 class="role"><a href="https://alpioneers.com/challenges-innovatethealps-hackathon-2026/" target="_blank" rel="noopener noreferrer">Alpioneers &ndash; InnovateTheAlps 2026</a></h3>
+            <span class="organization">Traunstein / Ruhpolding</span>
+            <span class="award-badge">1st Place</span>
+          </div>
+          <span class="time-period">Nov 2026</span>
+        </div>
+        <p class="education-details">Circular Economy challenge by DH electronics GmbH (B2B markets for refurbished hardware).</p>
+      </article>
+
+      <article class="timeline-item hackathon-item">
+        <div class="timeline-header">
+          <div>
+            <h3 class="role">BSH Internal Hackathon</h3>
+            <span class="organization">BSH Home Appliances Group</span>
+            <span class="award-badge">Rocket Science Category Winner</span>
+          </div>
+          <span class="time-period">Oct 2026</span>
+        </div>
+        <p class="education-details">Awarded in the &ldquo;Rocket Science&rdquo; category for a technically demanding engineering prototype.</p>
+      </article>
+
+      <article class="timeline-item hackathon-item">
+        <div class="timeline-header">
+          <div>
+            <h3 class="role"><a href="https://b2b.allgaeu.de/allgaeudigital" target="_blank" rel="noopener noreferrer">Hack for Bosch 2024</a></h3>
+            <span class="organization">Allg&auml;u Digital &bull; Kempten</span>
+          </div>
+          <span class="time-period">2024</span>
+        </div>
+        <p class="education-details">Regional developer hackathon hosted at Allg&auml;u Digital.</p>
+      </article>
+
+      <article class="timeline-item hackathon-item">
+        <div class="timeline-header">
+          <div>
+            <h3 class="role"><a href="https://www.prototype.club/this-was-bcx-24/" target="_blank" rel="noopener noreferrer">Bosch ConnectedExperience (BCX24)</a></h3>
+            <span class="organization">STATION-Berlin</span>
+          </div>
+          <span class="time-period">Feb 2024</span>
+        </div>
+        <p class="education-details">30-hour AIoT hackathon sprint alongside 300+ international developers from 45+ countries.</p>
+      </article>
+
+      <article class="timeline-item hackathon-item">
+        <div class="timeline-header">
+          <div>
+            <h3 class="role"><a href="https://www.stellwerk18.de/alpioneers-innovate-the-alps-hackathon-2022/" target="_blank" rel="noopener noreferrer">Alpioneers &ndash; InnovateTheAlps 2022</a></h3>
+            <span class="organization">Ruhpolding / Traunstein</span>
+          </div>
+          <span class="time-period">Dec 2022</span>
+        </div>
+        <p class="education-details">3-day regional sustainability and innovation hackathon for Alpine enterprises in Chiemgau.</p>
       </article>
     </section>
 
     <!-- Projects -->
     <section class="cv-section" id="projects">
-      <h2 class="section-title">Projects &amp; Open Source</h2>
+      <h2 class="section-title">Selected Projects</h2>
 
       <div class="projects-grid">
         <article class="project-card">
           <div class="project-header">
-            <h3 class="project-title">
-              <a href="https://github.com/uhetz/embedded-communication" target="_blank" rel="noopener noreferrer">Embedded Communication Protocol</a>
-            </h3>
-            <span class="project-badge">Open Source</span>
+            <h3 class="project-title">Target Hardware Test Automation &amp; Claude Skill</h3>
+            <span class="project-badge">Work Tooling</span>
           </div>
-          <p class="project-desc">Lightweight, reliable communication protocol designed for resource-constrained embedded systems and microcontrollers.</p>
+          <p class="project-desc">Custom scripts to speed up target-hardware testing, later packaged into a reusable Claude skill.</p>
           <div class="project-tags">
-            <span class="mini-tag">C++</span>
-            <span class="mini-tag">Embedded</span>
-            <span class="mini-tag">UART/SPI</span>
+            <span class="mini-tag">Python / Bash</span>
+            <span class="mini-tag">Linux</span>
+            <span class="mini-tag">Claude Skills</span>
           </div>
         </article>
 
         <article class="project-card">
           <div class="project-header">
             <h3 class="project-title">
-              <a href="https://github.com/uhetz/dotfiles" target="_blank" rel="noopener noreferrer">Reproducible Linux Dotfiles</a>
+              <a href="https://github.com/uhetz/dotfiles" target="_blank" rel="noopener noreferrer">dotfiles</a>
             </h3>
             <span class="project-badge">Personal</span>
           </div>
-          <p class="project-desc">Custom declarative configuration for Arch Linux, Neovim, tiling window managers, and optimized developer tooling.</p>
+          <p class="project-desc">Personal configuration files for Neovim and herdr, managed with chezmoi on Linux.</p>
           <div class="project-tags">
-            <span class="mini-tag">Linux</span>
             <span class="mini-tag">Neovim</span>
-            <span class="mini-tag">Lua / Shell</span>
+            <span class="mini-tag">Lua</span>
+            <span class="mini-tag">chezmoi</span>
+            <span class="mini-tag">Linux</span>
           </div>
         </article>
       </div>
@@ -171,21 +297,26 @@
       <article class="timeline-item">
         <div class="timeline-header">
           <div>
-            <h3 class="role">Bachelor of Science &ndash; Computer Science</h3>
+            <h3 class="role">Bachelor of Science &ndash; Business Informatics</h3>
             <span class="organization">IU Internationale Hochschule</span>
           </div>
-          <span class="time-period">2019 &ndash; 2023</span>
+          <span class="time-period">Oct 2019 &ndash; Jun 2023</span>
         </div>
-        <p class="education-details">Focus on Software Engineering, Operating Systems, Algorithms, and Distributed Computing.</p>
       </article>
 
       <article class="timeline-item">
         <div class="timeline-header">
           <div>
-            <h3 class="role">Vocational / Technical Training</h3>
-            <span class="organization">Traunstein Region</span>
+            <h3 class="role">B.Sc. Studies &ndash; Software Development and Administration of Automated Systems</h3>
+            <span class="organization">Tyumen State University</span>
           </div>
-          <span class="time-period">2014 &ndash; 2018</span>
+          <span class="time-period">Sep 2014 &ndash; Dec 2018</span>
+        </div>
+        <p class="education-details">
+          Foundational coursework completed prior to relocating to Germany (discontinued before graduation).
+        </p>
+        <div class="timeline-tech">
+          <span class="tech-label">Exposure:</span> C++, C, C#, Python, JavaScript, SQL (Database Design &amp; Administration)
         </div>
       </article>
     </section>
